@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Carter+One&family=Domine:wght@500&family=Fredoka+One&family=Merriweather&family=Playfair+Display:wght@500&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    --prim_col: rgb(255, 157, 157);
+    --sec_col: white;
+
+    --navbar_width: 80px;
+    overflow: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #212930;
+    height: 100%;
+    
+}
+
+
+
+
+nav {
+    display: flex;
+    position:fixed;
+    justify-content: center;
+  
+    height:var(--navbar_width);
+    width: 100%;
+    top: 0;
+    z-index: 100;
+
+    background-color: rgb(0, 0, 0);
+    box-shadow: 1px 1px 10px rgb(67 67 67);
+    color: white;
+}
+
+
+
+
+nav .nav_left {
+    display: flex;
+    flex: .95;
+    margin: auto 10px;
+    /* width: 40%; */
+}
+
+
+
+
+
+
+nav .nav_left #logo_text {
+    display: flex;
+    font-size: 45px;
+    align-items: center;
+    margin: 0px 10px;
+    font-family:  'Acme', sans-serif;
+    color: white;
+}
+
+
+
+
+
+nav .nav_left #logo_img {
+    width: 50px;
+    
+    margin: 0px 8px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+nav .nav_right {
+    margin: auto 10px;
+
+
+
+}
+
+nav .nav_right a {
+    font-size: 35px;
+    color: white;
+
+    margin: 0px 10px;
+
+}
+
+
+
+nav .nav_right a:hover {
+    transition: all .2s ease-in-out;
+    color: rgb(0, 217, 255);
+}
+
+
+
+
+
+
+
+
+/* --------------------------main--------------------------------- */
+
+
+main .submain.one {
+    padding: 20px 20px 40px 20px;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+
+    width: auto;
+    margin-top: calc(var(--navbar_width));
+    /* height: 300px; */
+    background-color:#11151A ;
+    color: white;
+}
+
+
+main .submain.one #profile_pic{
+    display: flex;
+    justify-content: center;
+    font-size: 130px;
+    margin: 10px;
+    color: white;
+   
+
+}
+
+main .submain.one #name {
+    margin: 10px ;
+    font-size: 35px;
+    margin: 8px;
+}
+
+main .submain.one #about {
+    padding: 0px 10vw;
+    font-size: 13px;
+    margin: 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+
+
+
+
+
+
+/* ----------main two------------------ */
+
+
+
+main .submain.two {
+    width: fit-content;
+    
+    
+    margin: 10px auto 100px auto;
+    color: white;
+}
+
+
+
+
+
+main .submain.two .allprojects {
+    
+    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+
+
+
+
+
+
+
+
+main .submain.two .allprojects .project {
+    display: flex;
+    flex-direction: row;
+    
+    
+    box-shadow: 1px 1px 2px rgb(0, 0, 0);
+    margin: 30px 0px;
+
+    border-radius: 20px;
+
+    height: 160px;
+    width:800px;
+    color: rgb(255, 255, 255);
+    transition: all .3s ease-in-out;
+
+}
+
+main .submain.two .allprojects .project_link{
+    
+    border-bottom: 1px solid rgba(255, 255, 255, 0.099);
+}
+
+
+main .submain.two .allprojects .project:hover{
+    scale:1.05;
+}
+
+
+
+
+
+
+main .submain.two .allprojects .project_img{
+
+    width: 280px;
+     border-radius: 20px;
+}
+
+
+main .submain.two .allprojects #projects_heading{
+    text-align: left;
+    margin:25px 0px;
+    font-size: 60px;
+    font-family: 'Domine', serif;
+}
+
+
+
+
+
+main .submain.two .allprojects .project_description{
+    margin: auto 30px ;
+    text-align: left;
+
+}
+
+
+
+
+main .submain.two .allprojects #project_name{
+    font-size: 30px;
+    font-weight: 100;
+    font-family:  'Domine', serif;
+} 
+
+
+
+
+
+main .submain.two .allprojects #about_project{
+    font-family:'Domine', serif;
+
+    font-size: 14px;
+    margin: 15px 0px;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------footer------------------------------- */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    padding: 10px 30px;
+    
+}
+footer .footer_one{
+    border-bottom: 2px solid rgb(162, 161, 157);
+    text-align: center;
+   padding: 15px 0px;
+
+}
+
+footer .footer_one a {
+    font-size: 30px;
+    color: white;
+
+    margin: 0px 10px;
+
+}
+
+
+footer .footer_two .text{
+   
+    width: 100%;
+    color:rgb(255, 255, 255);
+    font-size: 16px;
+    
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px;
+   
+
+}
+
